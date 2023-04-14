@@ -1,0 +1,30 @@
+version: '3.9'
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ./Dockerfile
+    restart: always
+    ports:
+      - "8000:8000"
+    expose:
+      - 8000
+    volumes:
+      - .:/backend/app
+
+  frontend:
+    build:
+      context: ./frontend/
+      dockerfile: ./Dockerfile
+      tags:
+        - my-frontend:latest
+    image: my-frontend:latest
+    restart: always
+    ports:
+      - "3000:3000"
+    expose:
+      - 3000
+    links:
+      - backend
+    volumes:
+      - .:/frontend/app
