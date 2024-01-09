@@ -1,6 +1,9 @@
 # Employee-Management-app
-Repository with the solution to the technical test from Factored
+Repository with the solution to the technical test from Factored.
+This is a user management application where you can modify your user profile and add skills to visualize them in a spider-chart.
+It supports sign in and login with custom user credentials
 
+## How to use it
 To open this project on windows based systems please follow carefully the next steps:
 
 1. Download the files by clicking the "Code" button located in the top left and then "Download Zip".
