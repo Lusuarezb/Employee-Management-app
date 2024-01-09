@@ -1,4 +1,4 @@
-# Factored-test
+# Employee-Management-app
 Repository with the solution to the technical test from Factored
 
 To open this project on windows based systems please follow carefully the next steps:
